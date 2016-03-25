@@ -17,9 +17,6 @@ import { Food } from './food.model';
 export class AppComponent {
   public foods: Food[];
   constructor(){
-    this.foods = [
-      new Food("Hamburger", "Details", 354, 0),
-      new Food("Fries", "Details2", 365, 1),
-    ]
+    this.foods = []
   }
 }
