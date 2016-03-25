@@ -7,7 +7,7 @@ import { Food } from './food.model';
   directives: [FoodListComponent],
   template: `
   <div class="container">
-    <h1>Meal Tracker</h1>
+    <h1>Meal Tracker</h1><br>
     <food-list [foodList]="foods">
     </food-list>
   </div>
