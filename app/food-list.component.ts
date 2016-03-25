@@ -12,8 +12,9 @@ import { Food } from './food.model';
   (click)="foodClicked(currentFood)"
   [class.selected]='currentFood === selectedFood'>
     <h4> {{ currentFood.name }} </h4>
-    <h4> {{ currentFood.details }} </h4>
-    <h4> {{ currentFood.calories }} </h4>
+    <div *ngIf='currentFood === selectedFood'>
+      <h4> {{ currentFood.details }} </h4>
+      <h4> {{ currentFood.calories }} </h4>
   </div>
   `
 })
