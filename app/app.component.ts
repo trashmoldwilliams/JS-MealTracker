@@ -10,5 +10,11 @@ import { Component, EventEmitter } from 'angular2/core';
 })
 
 export class AppComponent {
-  
+  public foods: Food[];
+  constructor(){
+    this.foods = [
+      new Food("Hamburger", "Details", 354, 0);
+      new Food("Fries", "Details2", 365, 1);
+    ]
+  }
 }
